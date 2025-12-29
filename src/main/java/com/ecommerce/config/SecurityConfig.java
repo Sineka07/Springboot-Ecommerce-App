@@ -47,7 +47,7 @@ public class SecurityConfig {
                 .clearAuthentication(true)
                 .permitAll()
             )
-            .headers(headers -> headers.frameOptions(FrameOptionsConfig::disable)); // For H2 console
+            .headers(headers -> headers.frameOptions(frameOptions -> frameOptions.disable())); // For H2 console
         
         return http.build();
     }

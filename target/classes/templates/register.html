@@ -23,11 +23,11 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
         .register-header {
-            background: linear-gradient(135deg, #4c63d2 0%, #5a3a8a 100%);
-            color: white;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 20px 20px 0 0;
             padding: 2rem;
             text-align: center;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
         .form-control {
             border-radius: 10px;
@@ -195,7 +195,7 @@
             if (password.match(/[^a-zA-Z0-9]/)) strength++;
             
             if (strength < 2) {
-                strengthDiv.textContent = 'Weak password';
+                strengthDiv.textContent = 'Weamk password';
                 strengthDiv.className = 'password-strength strength-weak';
             } else if (strength < 4) {
                 strengthDiv.textContent = 'Medium password';
